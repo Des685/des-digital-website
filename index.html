@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Des Digital</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+
+<header>
+  <div class="logo">Des Digital</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="content">
+    <h1>We design & build websites that work.</h1>
+    <p>Minimal, fast, conversion-focused. We craft digital experiences for modern brands and businesses.</p>
+    <br>
+    <a href="#contact" class="btn">Get Started</a>
+  </div>
+</section>
+
+<section id="services" class="services">
+  <h2>My Services</h2>
+  <br><br><br><br>
+  <div class="service-container">
+    <div class="card">
+      <p class="card-title">Business/Brochure Websites</p>
+      <p class="small-desc">We design and develop modern, responsive websites that help your business look professional online and attract more customers.</p>
+      <div class="go-corner"><div class="go-arrow">→</div></div>
+    </div>
+    <div class="card">
+      <p class="card-title">Landing Pages</p>
+      <p class="small-desc">High-converting landing pages designed to promote your services, capture leads, and drive customer action.</p>
+      <div class="go-corner"><div class="go-arrow">→</div></div>
+    </div>
+    <div class="card">
+      <p class="card-title">Logo Design</p>
+      <p class="small-desc">Unique and professional logos that represent your brand identity and help your business stand out.</p>
+      <div class="go-corner"><div class="go-arrow">→</div></div>
+    </div>
+    <div class="card">
+      <p class="card-title">Poster/Flyer Design</p>
+      <p class="small-desc">Creative and eye-catching posters and flyers to promote your business, events, or special offers.</p>
+      <div class="go-corner"><div class="go-arrow">→</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing" class="pricing">
+  <h2>Pricing</h2>
+  <br><br><br><br>
+  <div class="container">
+    <div class="card_box1" id="basic">
+      <span></span><br><br>
+      <h3>R1000-R1500</h3><br><br>
+      <ul>
+        <li>1-page professional website</li>
+        <li>Business information (About & Services)</li>
+        <li>Contact details (phone, email, location)</li>
+        <li>Fully mobile responsive design</li>
+      </ul>
+    </div>
+    <div class="card_box2" id="standard">
+      <span></span><br><br>
+      <h3>R2000-R2500</h3><br><br>
+      <ul>
+        <li>Everything included in Basic</li>
+        <li>Contact form for customer inquiries</li>
+        <li>WhatsApp chat integration</li>
+        <li>Enhanced modern design</li>
+        <li>Smooth scrolling and improved user experience</li>
+      </ul>
+    </div>
+    <div class="card_box3" id="premium">
+      <span></span><br><br>
+      <h3>R3000-R4000+</h3><br>
+      <ul>
+        <li>Everything included in Standard</li>
+        <li>Backend integration (forms, data handling)</li>
+        <li>Smooth animations and interactive elements</li>
+        <li>Priority design and customization</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="add-on" class="add-ons">
+  <h1>Add-ons</h1>
+  <br>
+  <div class="addOns">
+    <ul>
+      <li>Google Maps embed</li>
+      <li>Extra pages</li>
+      <li>Logo Design for website</li>
+      <li>Urgent Delivery</li>
+      <li>Maintenance /pm</li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact" class="contact-wrap">
+  <br>
+  <h1>Contact Us</h1>
+  <div class="contact-inner">
+    <div class="contact-left">
+      <div>
+        <h2>Let's build something great.</h2>
+        <p>Tell me about your project and I'll get back to you within 24 hours.</p>
+      </div>
+      <div>
+        <div class="contact-detail">
+          <div class="contact-icon"><i class='bx bx-envelope'></i></div>
+          <span>desdigital20@email.com</span>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-icon"><i class='bx bx-phone'></i></div>
+          <span>+27 076 457 9553</span>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-icon"><i class='bx bx-map'></i></div>
+          <span>Limpopo, South Africa</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-right">
+      <form id="contactForm" action="https://formspree.io/f/xykbadjy" method="POST">
+        <h3>Send a message</h3>
+        <div class="field">
+          <label>Name</label>
+          <input type="text" name="name" placeholder="Your full name" required>
+        </div>
+        <div class="field">
+          <label>Email</label>
+          <input type="email" name="email" placeholder="your@email.com" required>
+        </div>
+        <div class="field">
+          <label>Message</label>
+          <textarea name="message" rows="4" placeholder="Tell me about your project..." required></textarea>
+        </div>
+        <button type="submit">Send message</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<div class="chat">
+  <a href="https://wa.me/27764579553?text=Hello%2C%20I%20found%20you%20on%20your%20website!"
+     target="_blank"
+     style="display:inline-flex;align-items:center;gap:10px;padding:12px 22px;background:#25D366;color:#fff;border-radius:50px;font-size:15px;font-weight:500;text-decoration:none;">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.558 4.117 1.534 5.847L.057 23.5l5.784-1.517A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.37l-.36-.214-3.714.974.99-3.617-.234-.371A9.818 9.818 0 1112 21.818z"/>
+    </svg>
+    Chat on WhatsApp
+  </a>
+
+  <a href="mailto:desdigital20@gmail.com?subject=Enquiry%20from%20your%20website"
+     style="display:inline-flex;align-items:center;gap:10px;padding:12px 22px;background:#fff;color:#111;border-radius:50px;font-size:15px;font-weight:500;text-decoration:none;border:1px solid #ddd;">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="4" width="20" height="16" rx="2"/>
+      <path d="M2 7l10 7 10-7"/>
+    </svg>
+    Send an email
+  </a>
+</div>
+
+<footer>
+  <p>© 2026 Des Digital</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
