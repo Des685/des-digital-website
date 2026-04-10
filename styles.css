@@ -52,12 +52,12 @@ nav a:hover{
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: url(bk1.jpg);
+  background: url(bk4.jpg);
+  color:#020617;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
-  /* background: radial-gradient(circle at top, #1e293b, #020617); */
   padding: 120px 20px 60px;
 }
 
@@ -68,8 +68,9 @@ nav a:hover{
 
 .hero h1 {
   font-size: clamp(32px, 5vw, 64px);
-  font-weight: 700;
-  background: linear-gradient(to right, #38bdf8, #22c55e);
+  font-weight: 900;
+  /* background: #000000; */
+  background: linear-gradient(to right, #36bcf5, #13a147);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -115,8 +116,6 @@ nav a:hover{
   gap: 30px;
   flex-wrap: wrap;
 }
-
-/* CARD */
 .card {
   max-width: 300px;
   padding: 25px;
