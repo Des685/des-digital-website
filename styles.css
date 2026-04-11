@@ -68,9 +68,8 @@ nav a:hover{
 
 .hero h1 {
   font-size: clamp(32px, 5vw, 64px);
-  font-weight: 900;
-  /* background: #000000; */
-  background: linear-gradient(to right, #36bcf5, #13a147);
+  font-weight: 1000;
+  background: linear-gradient(to right, #ffffff, #13a168);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
