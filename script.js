@@ -8,6 +8,27 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+const sections = document.querySelectorAll('section');
+const navItems = document.querySelectorAll('.nav-item');
+
+window.addEventListener('scroll', () => {
+  let current = '';
+
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 100;
+    if (window.scrollY >= sectionTop) {
+      current = section.getAttribute('id');
+    }
+  });
+
+  navItems.forEach(item => {
+    item.classList.remove('active');
+    if (item.getAttribute('href') === `#${current}`) {
+      item.classList.add('active');
+    }
+  });
+});
+
 const form = document.getElementById("contactForm");
 const successMessage = document.getElementById("successMessage");
 

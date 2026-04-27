@@ -17,29 +17,16 @@ body {
   overflow-x: hidden;
 }
 
-/* ── HEADER ── */
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 50px;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  background: rgba(15, 23, 42, 0.7);
-  backdrop-filter: blur(10px);
-  z-index: 1000;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
 .logo {
   font-weight: 700;
   font-size: 22px;
-  position: absolute;
+  position: fixed;
+  top: 20px;
   left: 50px;
   color: white;
-  top:25px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 768px) {
@@ -49,11 +36,38 @@ header {
 
   .hero-logo {
     display: block;
-    text-align: center;
     font-weight: 700;
     font-size: 22px;
     color: white;
     margin-bottom: 20px;
+  }
+
+  .nav-cta {
+    display: none;
+  }
+
+  .glassNav {
+    position: fixed;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+  }
+
+  .glass-nav {
+    max-width: 100%;
+  }
+
+  .nav-list {
+    flex-wrap: wrap;
+    gap: 4px;
+    justify-content: center;
+  }
+
+  .nav-item {
+    font-size: 12px;
+    padding: 6px 10px;
+    white-space: nowrap;
   }
 }
 
@@ -166,6 +180,23 @@ header {
   color: #020617;
 }
 
+/* hide on desktop */
+.hero-logo {
+  display: none;
+}
+
+/* show in hero on mobile */
+@media (max-width: 768px) {
+  .hero-logo {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+  }
+}
+
 #heroCanvas {
   position: absolute;
   top: 0;
@@ -185,7 +216,7 @@ header {
 .hero h1 {
   font-size: clamp(32px, 5vw, 64px);
   font-weight: 1000;
-  background: linear-gradient(to right, #ffffff, #13a168);
+  background: linear-gradient(to right, #12cbc2, #13a168);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -463,7 +494,7 @@ header {
 .project-card:nth-child(3) .project-image { background-image: url('p3.png'); }
 .project-card:nth-child(4) .project-image { background-image: url('p4.png'); }
 
-.project-body {
+.project-content {
   padding: 20px 20px 22px;
 }
 
@@ -578,6 +609,46 @@ header {
 .card_box3 ul {
   color: #cbd5f5;
   line-height: 1.8;
+}
+
+.popular-badge {
+  display: inline-block;
+  background: rgba(56,189,248,0.15);
+  color: #38bdf8;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 6px;
+  letter-spacing: 0.05em;
+}
+
+.delivery-time {
+  font-size: 12px;
+  color: #94a3b8;
+  margin-top: 6px;
+}
+
+.plan-btn {
+  display: block;
+  text-align: center;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.15);
+  color: #e5e7eb;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.plan-btn:hover {
+  background: rgba(255,255,255,0.05);
+}
+
+.featured-btn {
+  background: rgba(56,189,248,0.15);
+  border-color: #38bdf8;
+
 }
 
 /* ── ADD-ONS ── */
