@@ -482,7 +482,7 @@ body {
   margin: 0;
 }
 
-/* ── PRICING ── */
+
 .container {
   display: flex;
   justify-content: center;
@@ -579,7 +579,6 @@ body {
   border-color: #38bdf8;
 }
 
-/* ── ADD-ONS ── */
 .add-ons {
   padding: 80px 20px;
   text-align: center;
@@ -634,7 +633,7 @@ body {
   white-space: nowrap;
 }
 
-/* ── CONTACT ── */
+
 .contact-inner {
   display: grid;
   grid-template-columns: 1fr;
@@ -725,7 +724,6 @@ body {
   box-shadow: 0 10px 25px rgba(56, 189, 248, 0.4);
 }
 
-/* ── CHAT BUTTONS ── */
 .chat {
   display: flex;
   justify-content: center;
@@ -734,7 +732,6 @@ body {
   padding: 20px;
 }
 
-/* ── PDF BUTTON ── */
 .pdf-btn {
   display: flex;
   justify-content: center;
@@ -757,7 +754,6 @@ body {
   background: #1e40af;
 }
 
-/* ── FOOTER ── */
 footer {
   background: #020617;
   color: #94a3b8;
@@ -765,9 +761,7 @@ footer {
   padding: 20px;
 }
 
-/* ════════════════════════════
-   TABLET — 600px and up
-════════════════════════════ */
+/*TABLET — 600px and up*/
 @media (min-width: 600px) {
   .projects-container {
     grid-template-columns: repeat(2, 1fr);
@@ -785,9 +779,7 @@ footer {
   }
 }
 
-/* ════════════════════════════
-   DESKTOP — 900px and up
-════════════════════════════ */
+/*DESKTOP — 900px and up*/
 @media (min-width: 900px) {
   .logo {
     display: flex;
@@ -868,9 +860,7 @@ footer {
   }
 }
 
-/* ════════════════════════════
-   LARGE DESKTOP — 1200px and up
-════════════════════════════ */
+/*LARGE DESKTOP — 1200px and up */
 @media (min-width: 1200px) {
   .nav-cta {
     right: 200px;
