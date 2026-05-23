@@ -3,344 +3,352 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Affordable web design for all kinds of businesses. Websites from R1000. Fast, modern and mobile-friendly.">
-  <title>Des Digital | Affordable Web Design</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Des Digital — Premium web design for ambitious businesses. Fast, modern, conversion-focused websites from R1000.">
+  <title>Des Digital | Web Design Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="icon" type="image/png" href="logo.png">
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DVZK06VC3W"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-DVZK06VC3W');
-</script>
-  
+  <link rel="icon" type="image/png" href="media/logo.png">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DVZK06VC3W"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-DVZK06VC3W');
+  </script>
 </head>
 <body>
 
-<svg style="display: none">
-  <filter id="glass-distortion">
-    <feTurbulence type="turbulence" baseFrequency="0.008" numOctaves="2" result="noise" />
-    <feDisplacementMap in="SourceGraphic" in2="noise" scale="77" />
-  </filter>
-</svg>
+  <!-- Ambient background orbs -->
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
 
-<div class="logo">
-  <img src="logo.png" alt="Des Digital logo" style="width: 55px; height: 55px; vertical-align: middle; margin-right: 0px;">
-  Des Digital
-</div>
+  <!-- Logo (desktop) -->
+  <a href="#" class="logo" aria-label="Des Digital home">
+    <img src="media/logo.png" alt="" width="36" height="36">
+    <span>Des Digital</span>
+  </a>
 
-<div class="glassNav">
-  <nav class="glass-nav">
-  <div class="glass-filter"></div>
-  <div class="glass-overlay"></div>
-  <div class="glass-specular"></div>
-  <div class="glass-content">
+  <!-- Centred pill nav -->
+  <nav class="glass-nav" role="navigation" aria-label="Main navigation">
     <ul class="nav-list">
-      <li><a href="#" class="nav-item active">Home</a></li>
-      <li><a href='#about' class="nav-item">About</a></li>
+      <li><a href="#"        class="nav-item active">Home</a></li>
+      <li><a href="#about"   class="nav-item">About</a></li>
       <li><a href="#services" class="nav-item">Services</a></li>
       <li><a href="#pricing" class="nav-item">Pricing</a></li>
       <li><a href="#contact" class="nav-item">Contact</a></li>
     </ul>
-  </div>
-</nav>
-</div>
-<a href="#contact" class="nav-cta">Get Free Quote</a>
+  </nav>
 
+  <a href="#contact" class="nav-cta">Get Free Quote</a>
 
-<section class="hero">
-  <canvas id="heroCanvas"></canvas>
-  <div class="content">
-    <div class="hero-logo">Des Digital</div>
-    <h1>Build a strong online presence for your business</h1>
-    <p>Minimal, fast, conversion-focused. We craft digital experiences for every kind of business and/or brand.</p>
-    <br>
-    <a href="#pricing" class="btn">Get Started</a>
-  </div>
-</section>
-
-<section id="about" class="about">
-  <div class="about-inner">
-    <div class="about-left">
-      <div class="about-img-wrap">
-        <div class="about-img-placeholder">
-          <span></span>
-        </div>
-        <div class="about-img-glow"></div>
+  <!-- ═══ HERO ═══ -->
+  <section class="hero" id="home">
+    <canvas id="heroCanvas" aria-hidden="true"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for new projects
+      </div>
+      <h1 class="hero-heading">
+        Build a powerful<br>
+        <em>online presence</em><br>
+        for your business.
+      </h1>
+      <p class="hero-sub">Minimal, fast, conversion-focused. I craft websites that attract customers and grow businesses across South Africa.</p>
+      <div class="hero-actions">
+        <a href="#pricing" class="btn btn-primary">View Pricing</a>
+        <a href="#projects" class="btn btn-ghost">See My Work</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><strong>10+</strong><span>Projects</span></div>
+        <div class="hero-stat-div"></div>
+        <div class="hero-stat"><strong>8+</strong><span>Clients</span></div>
+        <div class="hero-stat-div"></div>
+        <div class="hero-stat"><strong>2+</strong><span>Years</span></div>
       </div>
     </div>
-    <div class="about-right">
-      <p class="about-tag">Who I Am</p>
-      <h2 class="about-heading">I'm <span>Desmond Mathebula</span>, a web designer based in Limpopo, SA</h2>
-      <p class="about-bio">
-        I help small businesses and brands build a strong online presence with clean, modern websites. 
-        I focus on designs that are fast, mobile-friendly, and built to convert visitors into customers.
-      </p>
-      <div class="about-stats">
-        <div class="stat">
-          <h3>10+</h3>
-          <p>Projects Done</p>
-        </div>
-        <div class="stat">
-          <h3>8+</h3>
-          <p>Happy Clients</p>
-        </div>
-        <div class="stat">
-          <h3>2+</h3>
-          <p>Years Experience</p>
+    <div class="hero-scroll" aria-hidden="true">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══ ABOUT ═══ -->
+  <section id="about" class="about">
+    <div class="section-inner about-inner">
+      <div class="about-image-col">
+        <div class="about-img-frame">
+          <div class="about-img-main"></div>
+          <div class="about-img-deco"></div>
         </div>
       </div>
-      <a href="#contact" class="btn">Work With Me</a>
-    </div>
-  </div>
-</section>
-
-<section id="services" class="services">
-  <h2>What I offer</h2>
-  <br><br><br><br>
-  <div class="service-container">
-    <div class="card">
-      <p class="card-title">Business and Portfolio Websites</p>
-      <p class="small-desc">We design and develop modern, responsive websites that help your business look professional online and attract more customers.</p>
-      <div class="go-corner"><div class="go-arrow"></div></div>
-    </div>
-    <div class="card">
-      <p class="card-title">Landing Pages</p>
-      <p class="small-desc">High-converting landing pages designed to promote your services, capture leads, and drive customer action.</p>
-      <div class="go-corner"><div class="go-arrow"></div></div>
-    </div>
-    <div class="card">
-      <p class="card-title">Brand Logos and Posters</p>
-      <p class="small-desc">Clean, professional visuals that strengthen your brand and make your business stand out.</p>
-      <div class="go-corner"><div class="go-arrow"></div></div>
-    </div>
-    <div class="card">
-      <p class="card-title">Website Maintenance</p>
-      <p class="small-desc">Keep your website fresh, secure, and running smoothly. I handle updates, content changes, and fixes so you never have to worry about your site — monthly plans available</p>
-      <div class="go-corner"><div class="go-arrow"></div></div>
-    </div>
-  </div>
-</section>
-
-<section id="projects" class="projects">
-  <div class="project-body">
-    <h2>Projects</h2>
-  <br><br><br>
-  <p>Here are some of the projects I have worked on</p>
-  <br><br><br>
-
-  <div class="projects-container">
-
-    <div class="project-card">
-      <div class="project-image"></div>
-      <div class="category">Web Design</div>
-      <div class="project-content">
-        <h3 class="heading">Guesthouse Website Concept</h3>
-        <p class="description">A clean, modern website concept for a Guesthouse.</p>
-        
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="project-image"></div>
-      <div class="category">Web Design</div>
-      <div class="project-info">
-        <h3 class="heading">CarePharm</h3>
-        <p class="description">Concept website for CarePharm Pharmacy.</p>
-        
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="project-image"></div>
-      <div class="category">Web Design</div>
-      <div class="project-info">
-        <h3 class="heading">Willy's Eatz</h3>
-        <p class="description">Concept Landing page for Willy's Eatz food business</p>
-        
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="project-image"></div>
-      <div class="category">Web Design</div>
-      <div class="project-info">
-        <h3 class="heading">DentaCare</h3>
-        <p class="description">Concept website for DentaCare dentistry.</p>
-        
-      </div>
-    </div>
-
-  </div>
-  </div>
-</section>
-
-<section id="pricing" class="pricing">
-  <h2>Pricing</h2>
-  <p>No hidden fees. Choose a plan that fits your business.</p>
-  <br><br>
-  <div class="container">
-
-    <div class="card_box1" id="basic">
-      <h2>Starter</h2>
-      <h3>R1000–R1500</h3>
-      <p class="delivery-time">Delivered in 3–5 days</p><br>
-      <ul>
-        <li>1-page professional website</li>
-        <li>Business info & contact details</li>
-        <li>Contact form for inquiries</li>
-        <li>WhatsApp & email button integration</li>
-        <li>Google Maps embed</li>
-        <li>Social media links</li>
-        <li>Fully mobile responsive design</li>
-      </ul><br>
-      <a href="#contact" class="plan-btn">Get Started</a>
-    </div>
-
-    <div class="card_box2 featured" id="standard">
-      <span class="popular-badge">Most Popular</span><br><br>
-      <h2>Standard</h2>
-      <h3>R2000–R2500</h3>
-      <p class="delivery-time">Delivered in 5–7 days</p><br>
-      <ul>
-        <li>Everything in Starter</li>
-        <li>Enhanced modern design</li>
-        <li>Smooth scrolling & improved UX</li>
-        <li>Basic SEO setup</li>
-        <li>Google Analytics integration</li>
-        <li>Up to 3 pages</li>
-      </ul><br>
-      <a href="#contact" class="plan-btn featured-btn">Get Started</a>
-    </div>
-
-    <div class="card_box3" id="premium">
-      <h2>Premium</h2>
-      <h3>R3000–R5000</h3>
-      <p class="delivery-time">Delivered in 7–14 days</p><br>
-      <ul>
-        <li>Everything in Standard</li>
-        <li>Blog section with content management</li>
-        <li>Speed & performance optimization</li>
-        <li>Smooth animations & interactions</li>
-        <li>Priority design & customization</li>
-      </ul><br>
-      <a href="#contact" class="plan-btn">Get Started</a>
-    </div>
-
-  </div>
-</section>
-<div class="pdf-btn">
-  <a href="/desdigital-pricing.pdf" download="DesDigital Pricing & Services">
-  <button class="download-btn">Download Pricing & Services ⬇</button>
-</a>
-</div>
-
-<section id="add-on" class="add-ons">
-  <h1>Add-ons & Extras</h1>
-  <p><p>Optional extras to enhance your website</p></p>
-  <br>
-  <div class="addOns">
-    <ul>
-  
-      <li>Extra pages (pricing may vary based on page complexity)
-        <span>+R300 per page</span>
-      </li>
-      <li>Logo Design for website 
-        <span>+R400</span></li>
-      <li>Urgent Delivery 
-        <span>+R500</span></li>
-      <li>Custom Domain purchase and setup
-        <span>+R250-R350</span></li>
-      <li>Website Maintenance(Content update, bug fixes, performance and security checks)
-        <span>+R150-R300/pm</span></li>
-    </ul>
-  </div>
-</section>
-
-<section style="text-align:center; padding:60px 20px;">
-  <h2>Ready to grow your business online?</h2>
-  <a href="#contact" class="btn">Get Your Website</a>
-</section>
-
-<section id="contact" class="contact-wrap">
-  <br>
-  <h1>Contact Me</h1><br>
-  <div class="contact-inner">
-    <div class="contact-left">
-      <div>
-        <h2>Let's buid a website for your business.</h2><br><br>
-        <p>Tell us about your business or project and I'll get back to you within 24 hours.</p>
-      </div>
-      <div>
-        <div class="contact-detail">
-          <div class="contact-icon"><i class='bx bx-envelope'></i></div>
-          <span>desdigital20@gmail.com</span>
+      <div class="about-text-col">
+        <p class="section-label">01 — About</p>
+        <h2 class="section-heading">I'm <span class="grad-text">Desmond Mathebula</span>, a web designer based in Limpopo, SA</h2>
+        <p class="about-bio">I help small businesses and brands build a strong online presence with clean, modern websites. My focus is on designs that are fast, mobile-friendly, and built to convert visitors into paying customers.</p>
+        <div class="about-stats">
+          <div class="stat"><h3>10+</h3><p>Projects Done</p></div>
+          <div class="stat"><h3>8+</h3><p>Happy Clients</p></div>
+          <div class="stat"><h3>2+</h3><p>Years Exp.</p></div>
         </div>
-        <div class="contact-detail">
-          <div class="contact-icon"><i class='bx bx-phone'></i></div>
-          <span>+2776 457 9553</span>
+        <a href="#contact" class="btn btn-primary">Work With Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SERVICES ═══ -->
+  <section id="services" class="services">
+    <div class="section-inner">
+      <div class="services-header">
+        <p class="section-label">02 — Services</p>
+        <h2 class="section-heading">What I offer</h2>
+        <p class="section-sub">Everything you need to establish and grow your presence online.</p>
+      </div>
+      <div class="services-list">
+        <div class="service-row">
+          <span class="svc-num">01</span>
+          <div class="svc-body">
+            <h3>Business &amp; Portfolio Websites</h3>
+            <p>Modern, responsive websites that help your business look professional online and attract more customers.</p>
+          </div>
+          <span class="svc-arrow">→</span>
         </div>
-        <div class="contact-detail">
-          <div class="contact-icon"><i class='bx bx-map'></i></div>
-          <span>Limpopo, South Africa</span>
+        <div class="service-row">
+          <span class="svc-num">02</span>
+          <div class="svc-body">
+            <h3>Landing Pages</h3>
+            <p>High-converting pages designed to promote your services, capture leads, and drive customer action.</p>
+          </div>
+          <span class="svc-arrow">→</span>
+        </div>
+        <div class="service-row">
+          <span class="svc-num">03</span>
+          <div class="svc-body">
+            <h3>Brand Logos &amp; Visuals</h3>
+            <p>Clean, professional visuals that strengthen your brand and make your business stand out from competitors.</p>
+          </div>
+          <span class="svc-arrow">→</span>
+        </div>
+        <div class="service-row">
+          <span class="svc-num">04</span>
+          <div class="svc-body">
+            <h3>Website Maintenance</h3>
+            <p>Keep your site fresh, secure, and running smoothly. Monthly plans available for ongoing support.</p>
+          </div>
+          <span class="svc-arrow">→</span>
         </div>
       </div>
     </div>
+  </section>
 
-    <div class="contact-right">
-      <form id="contactForm" action="https://formspree.io/f/xykbadjy" method="POST">
-        <h3>Send a message</h3>
-        <div class="field">
-          <label>Name</label>
-          <input type="text" name="name" placeholder="Your full name" required>
+  <!-- ═══ PROJECTS ═══ -->
+  <section id="projects" class="projects">
+    <div class="section-inner">
+      <p class="section-label">03 — Work</p>
+      <h2 class="section-heading">Selected Projects</h2>
+      <p class="section-sub">A selection of recent work across different industries.</p>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-img" style="background-image:url('media/p1.png')">
+            <div class="project-overlay"><span>Web Design</span></div>
+          </div>
+          <div class="project-meta">
+            <h3>Guesthouse Concept</h3>
+            <p>A clean, modern website concept for a guesthouse.</p>
+          </div>
         </div>
-        <div class="field">
-          <label>Email</label>
-          <input type="email" name="email" placeholder="your@email.com" required>
+        <div class="project-card">
+          <div class="project-img" style="background-image:url('media/p2.png')">
+            <div class="project-overlay"><span>Web Design</span></div>
+          </div>
+          <div class="project-meta">
+            <h3>CarePharm</h3>
+            <p>Concept website for CarePharm Pharmacy.</p>
+          </div>
         </div>
-        <div class="field">
-          <label>Message</label>
-          <textarea name="message" rows="4" placeholder="Tell me about your business..." required></textarea>
+        <div class="project-card">
+          <div class="project-img" style="background-image:url('media/p3.png')">
+            <div class="project-overlay"><span>Web Design</span></div>
+          </div>
+          <div class="project-meta">
+            <h3>Willy's Eatz</h3>
+            <p>Concept landing page for Willy's Eatz food business.</p>
+          </div>
         </div>
-        <button type="submit">Send message</button>
-      </form>
+        <div class="project-card">
+          <div class="project-img" style="background-image:url('media/p4.png')">
+            <div class="project-overlay"><span>Web Design</span></div>
+          </div>
+          <div class="project-meta">
+            <h3>DentaCare</h3>
+            <p>Concept website for DentaCare dentistry.</p>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-  </div>
-</section>
+  <!-- ═══ PRICING ═══ -->
+  <section id="pricing" class="pricing">
+    <div class="section-inner">
+      <div class="pricing-header">
+        <p class="section-label">04 — Pricing</p>
+        <h2 class="section-heading">Simple, transparent pricing</h2>
+        <p class="section-sub">No hidden fees. Choose a plan that fits your business.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card" id="basic">
+          <p class="pricing-tier">Starter</p>
+          <p class="pricing-price">R1 000 <span>– R1 500</span></p>
+          <p class="pricing-eta">Delivered in 3–5 days</p>
+          <ul class="pricing-features">
+            <li>1-page professional website</li>
+            <li>Business info &amp; contact details</li>
+            <li>Contact form for inquiries</li>
+            <li>WhatsApp &amp; email integration</li>
+            <li>Google Maps embed</li>
+            <li>Social media links</li>
+            <li>Fully mobile responsive</li>
+          </ul>
+          <a href="#contact" class="plan-btn">Get Started</a>
+        </div>
 
-<div class="chat">
-  <a href="https://wa.me/27764579553?text=Hello%2C%20I%20found%20you%20on%20your%20website!"
-     target="_blank"
-     style="display:inline-flex;align-items:center;gap:10px;padding:12px 22px;background:#25D366;color:#fff;border-radius:50px;font-size:15px;font-weight:500;text-decoration:none;">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
-      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
-      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.558 4.117 1.534 5.847L.057 23.5l5.784-1.517A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.37l-.36-.214-3.714.974.99-3.617-.234-.371A9.818 9.818 0 1112 21.818z"/>
-    </svg>
-    Chat on WhatsApp
-  </a>
+        <div class="pricing-card pricing-featured" id="standard">
+          <span class="popular-badge">Most Popular</span>
+          <p class="pricing-tier">Standard</p>
+          <p class="pricing-price">R2 000 <span>– R2 500</span></p>
+          <p class="pricing-eta">Delivered in 5–7 days</p>
+          <ul class="pricing-features">
+            <li>Everything in Starter</li>
+            <li>Enhanced modern design</li>
+            <li>Smooth scrolling &amp; improved UX</li>
+            <li>Basic SEO setup</li>
+            <li>Google Analytics integration</li>
+            <li>Up to 3 pages</li>
+          </ul>
+          <a href="#contact" class="plan-btn plan-btn-featured">Get Started</a>
+        </div>
 
-  <a href="mailto:desdigital20@gmail.com?subject=Enquiry%20from%20your%20website"
-     style="display:inline-flex;align-items:center;gap:10px;padding:12px 22px;background:#fff;color:#111;border-radius:50px;font-size:15px;font-weight:500;text-decoration:none;border:1px solid #ddd;">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-      <rect x="2" y="4" width="20" height="16" rx="2"/>
-      <path d="M2 7l10 7 10-7"/>
-    </svg>
-    Send an email
-  </a>
-</div>
-<br>
-<br>
-<footer>
-  <p>© 2026 Des Digital</p>
-</footer>
+        <div class="pricing-card" id="premium">
+          <p class="pricing-tier">Premium</p>
+          <p class="pricing-price">R3 000 <span>– R5 000</span></p>
+          <p class="pricing-eta">Delivered in 7–14 days</p>
+          <ul class="pricing-features">
+            <li>Everything in Standard</li>
+            <li>Blog with content management</li>
+            <li>Speed &amp; performance optimization</li>
+            <li>Smooth animations &amp; interactions</li>
+            <li>Priority design &amp; customization</li>
+          </ul>
+          <a href="#contact" class="plan-btn">Get Started</a>
+        </div>
+      </div>
+      <div class="pdf-row">
+        <a href="/desdigital-pricing.pdf" download="DesDigital Pricing &amp; Services" class="btn btn-outline">Download Full Pricing Guide ↓</a>
+      </div>
+    </div>
+  </section>
 
-<script src="script.js"></script>
+  <!-- ═══ ADD-ONS ═══ -->
+  <section id="add-on" class="addons">
+    <div class="section-inner addons-inner">
+      <div class="addons-head">
+        <p class="section-label">05 — Extras</p>
+        <h2 class="section-heading">Add-ons &amp; Extras</h2>
+        <p class="section-sub">Optional enhancements to supercharge your website.</p>
+      </div>
+      <div class="addons-table">
+        <div class="addon-row">
+          <span class="addon-name">Extra pages <em>(complexity may vary)</em></span>
+          <span class="addon-price">+R300 / page</span>
+        </div>
+        <div class="addon-row">
+          <span class="addon-name">Logo Design for website</span>
+          <span class="addon-price">+R400</span>
+        </div>
+        <div class="addon-row">
+          <span class="addon-name">Urgent Delivery</span>
+          <span class="addon-price">+R500</span>
+        </div>
+        <div class="addon-row">
+          <span class="addon-name">Custom Domain Purchase &amp; Setup</span>
+          <span class="addon-price">+R250–R350</span>
+        </div>
+        <div class="addon-row">
+          <span class="addon-name">Website Maintenance <em>(updates, fixes, security)</em></span>
+          <span class="addon-price">+R150–R300/pm</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CTA STRIP ═══ -->
+  <section class="cta-strip">
+    <div class="section-inner cta-inner">
+      <h2>Ready to grow your business online?</h2>
+      <a href="#contact" class="btn btn-primary">Get Your Website Today</a>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT ═══ -->
+  <section id="contact" class="contact">
+    <div class="section-inner contact-inner">
+      <div class="contact-left">
+        <p class="section-label">06 — Contact</p>
+        <h2 class="section-heading">Let's build something great.</h2>
+        <p class="contact-sub">Tell me about your business and I'll get back to you within 24 hours.</p>
+        <div class="contact-details">
+          <a href="mailto:desdigital20@gmail.com" class="contact-item">
+            <span class="c-icon"><i class='bx bx-envelope'></i></span>
+            <span>desdigital20@gmail.com</span>
+          </a>
+          <a href="tel:+27764579553" class="contact-item">
+            <span class="c-icon"><i class='bx bx-phone'></i></span>
+            <span>+27 76 457 9553</span>
+          </a>
+          <div class="contact-item">
+            <span class="c-icon"><i class='bx bx-map'></i></span>
+            <span>Limpopo, South Africa</span>
+          </div>
+        </div>
+        <a href="https://wa.me/27764579553?text=Hello%2C%20I%20found%20you%20on%20your%20website!" target="_blank" rel="noopener" class="wa-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.123.558 4.117 1.534 5.847L.057 23.5l5.784-1.517A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.37l-.36-.214-3.714.974.99-3.617-.234-.371A9.818 9.818 0 1112 21.818z"/>
+          </svg>
+          Chat on WhatsApp
+        </a>
+      </div>
+      <div class="contact-right">
+        <form id="contactForm" action="https://formspree.io/f/xykbadjy" method="POST">
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your business..." required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Message →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="section-inner footer-inner">
+      <span class="footer-brand">Des Digital</span>
+      <p class="footer-copy">© 2026 Des Digital. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

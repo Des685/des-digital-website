@@ -1,0 +1,79 @@
+:root {
+  --bg:           #050b18;
+  --bg-2:         #080f20;
+  --bg-card:      #0b1526;
+  --accent:       #22d3ee;
+  --accent-soft:  rgba(34, 211, 238, 0.12);
+  --accent-glow:  rgba(34, 211, 238, 0.28);
+  --indigo:       #818cf8;
+  --text:         #e8f0ff;
+  --text-dim:     #8b99b5;
+  --text-muted:   #404d65;
+  --border:       rgba(255,255,255,0.06);
+  --border-med:   rgba(255,255,255,0.10);
+  --r-sm: 8px; --r-md: 14px; --r-lg: 22px; --r-xl: 32px;
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+}
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background:var(--bg-2,--bg-card);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      border: 1px solid #e0e0e0;
+      padding: 60px 48px;
+      max-width: 480px;
+      width: 90%;
+      text-align: center;
+    }
+    .icon {
+      width: 64px;
+      height: 64px;
+      background: #eaf3de;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: 500;
+      color: #2C2C2A;
+      margin-bottom: 12px;
+    }
+    p {
+      font-size: 15px;
+      color: #888780;
+      line-height: 1.7;
+      margin-bottom: 32px;
+    }
+    a {
+      display: inline-block;
+      padding: 12px 32px;
+      background: #2C2C2A;
+      color: #F1EFE8;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    a:hover { background: #444441; }
